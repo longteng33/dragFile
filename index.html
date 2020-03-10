@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>拖拽文件上传</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="drag-con">
+        <!-- <div class="file-con">
+            拖拽文件到此区域
+        </div>
+        <div class="progress-con">
+            <div class="progress">
+                <div class="val"></div>
+            </div>
+            <span class="text">0%</span>
+        </div> -->
+    </div>
+
+    <script src="./dragFile.js"></script>
+    <script>
+        new DragFile({
+            ele:document.getElementsByClassName("drag-con")[0],
+            step :1024 * 1024,//上传步长
+            cb:function(){
+                alert("上传完成！")
+            },
+
+        })
+    </script>
+</body>
+
+</html>

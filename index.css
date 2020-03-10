@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.drag-con{
+    width: 300px;
+    margin: 30px auto 0;
+}
+.file-con{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: rgb(134, 133, 130);
+    color: #fff;
+    font-size: 20px;
+    user-select: none;
+}
+.progress-con{
+    position: relative;
+    width: 300px;
+    margin-top: 5px;
+}
+.progress{
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.progress .val{
+    /* 精度条通过改变width实现 */
+    width: 0px;
+    height:100%;
+    background: #000;
+}
+.text{
+    position: absolute;
+    right: 0;
+    line-height: 30px;
+}
+
+
+#confirm{
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 150px;
+    background: rgba(3, 3, 3, 0.5);
+    display: none;
+    
+}
+#confirm-text{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 150px;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    border:30px solid rgba(158, 228, 193, 0.5);
+}
+#confirm-cancel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+    font-size: 30px;
+    background: rgba(3, 33, 33, 0.5);
+    user-select: none;
+}
+#confirm-cancel:hover{
+    background: red;
+}
