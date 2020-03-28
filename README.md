@@ -6,8 +6,8 @@ https://longteng33.github.io/dragFile
 2）drag 在拖拽过程中触发  
 3）dragend拖拽完成时触发  
 
-2、目标元素的四个事件
-1）dragenter进入目标元素时触发
+2、目标元素的四个事件  
+1）dragenter进入目标元素时触发  
 2）**dragover被拖放元素在目标元素上时触发**  
 3）dragleave被拖放元素从目标元素离开时触发    
 4）**dragdrop被拖放元素在目标元素上，同时鼠标放开时触发**  

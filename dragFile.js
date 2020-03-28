@@ -68,16 +68,17 @@ DragFile.prototype = {
             }
             _this.val.style.width = per * 250 + "px";
             _this.text.innerHTML = Math.round(per * 100) + "%";
+            
         }
 
         // reader对象的一段读取完成时的事件
         this.reader.onload = function () {
             if (_this.loaded < _this.total) {
                 _this.readBlob(_this.reader, _this.loaded, _this.step);
-            } else {
+            }else{
                 _this.cb();
             }
-
+            
         }
 
     },

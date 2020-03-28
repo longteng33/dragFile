@@ -30,11 +30,11 @@
             ele:document.getElementsByClassName("drag-con")[0],
             step :1024 * 1024,//上传步长
             cb:function(){
-                alert("上传完成！")
+                console.log("上传完成！")
             },
 
         })
     </script>
 </body>
-
+<!-- alert会阻塞线程 -->
 </html>
